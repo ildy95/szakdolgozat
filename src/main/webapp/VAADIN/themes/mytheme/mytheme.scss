@@ -1,0 +1,197 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+$v-font-size: 16px;
+$v-font-color: black;
+$v-font-weight: bold;
+$v-font-weight: 300;
+$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+$v-border: 1px solid (v-shade 0.7);
+$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+$v-gradient: v-linear 8%;
+$v-bevel-depth: 30%;
+$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+$v-friendly-color: #2c9720;
+$v-error-indicator-color: #ed473b;
+
+//Modify background-image
+//$v-background-color: #1a61b7;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin mytheme {
+  @include valo;
+  $v-font-family: "MyFontFamily", "Helvetica Neue", "Open Sans", sans-serif;
+  $v-font-family: "MyFontFamily2", "Helvetica Neue", "Open Sans", sans-serif;
+
+  // Insert your own theme rules here
+  .mainwindow {
+  	border-top-width: 25px;
+  	border-top-color: black;
+	background: url("images/homekep5.jpg") no-repeat;
+  	background-size: 100% 100%;
+  }
+  
+  .header1 {
+  	background-color: #252424;
+  }
+  
+  .header2 {
+  	
+  	border-top: thick double #650505;
+  }
+  
+  .footer {
+  }
+  
+  
+  .mainlayout {
+  	background: url("images/fokep.jpg") no-repeat;
+  	background-size: 100% 100%;
+  }
+  
+  .adminmain {
+  	//background: url("images/fohatter.png") no-repeat;
+    //background-size: 100% 100%;
+  	//border: 2px solid red;
+  	background: transparent;
+    //border-radius: 8px;
+    //box-shadow: 5px 5px 5px 5px #888888;
+    //border-bottom-left-radius: 5em;
+  }
+  
+  .menulayout {
+  	//background: url("images/fohatter.png") no-repeat;
+    //background-size: 100% 100%;
+  }
+  
+  .loginwindow {
+  	//background: url("images/fuzet.jpg") no-repeat;
+  	//background-size: 100% 100%;
+  }
+  
+  .v-inline-datefield-calendarpanel-header,.v-inline-datefield-calendarpanel-body{
+  	display: none;
+  }
+  
+  .elso {
+  	
+  	background: url("images/kezdolaphatter.jpg") no-repeat;
+  	background-size: 100% 100%;
+  	//border-radius: 2em;  	
+  	border-top-left-radius: 2em;
+  	border-top-right-radius: 2em;
+  	
+  }
+  
+  .masodik {
+  	background: url("images/mens35.png") no-repeat;
+  	background-size: 100% 100%;
+  	border-top-left-radius: 12em;
+  	border-top-right-radius: 12em;
+  	border-bottom-left-radius: 1em;
+  	border-bottom-right-radius: 1em;
+  }
+  
+  .menu {
+  	background: transparent;
+  }
+  
+  .bejelentkezes {
+  	color: black;
+  	font-family: MyFontFamily2;
+  	font-size: 200%;
+  }
+  
+  
+  .v-menubar-menuitem {
+    background: #FABABA;
+  }
+  
+  .v-menubar {
+  	background: transparent;
+  }
+
+  .v-menubar-menuitem:hover {
+    background: transparent;
+  }
+
+  .v-menubar-menuitem-selected {
+    background-color: black;
+  }
+
+  .smsfelirat {
+  	text-transform: capitalize;
+  	font-size: 250%;
+  	font-family: MyFontFamily2;
+  }
+  
+  .boritolayout {
+  	background: url("images/note2.png") no-repeat;
+  	background-size: 100% 100%;
+  }
+  
+  .v-app .v-csslayout {
+    overflow: auto;
+	}
+	
+	.v-table-mymodel .v-scrollable {
+    overflow: auto;
+}
+
+.adminlayout {
+	background: url("images/fokep.jpg") no-repeat;
+  	background-size: 100% 100%;
+	box-shadow: 5px 5px 5px 5px #E4E4E4;
+  	
+  	border-top-left-radius: 2em;
+  	border-top-right-radius: 2em;
+  	border-bottom-left-radius: 2em;
+  	border-bottom-right-radius: 2em;
+	}
+	
+	.admin {
+		font-size: 500%;
+		font-family: MyFontFamily;
+		color: white;
+	}
+	
+		.v-table-row, .v-table-row-odd {
+    height: 50px;
+}
+
+.labelkep {
+	background: url("images/labelke.png") no-repeat;
+  	background-size: 100% 100%;
+}
+
+.tabsheet {
+}
+
+.belepeslayout {
+	background: url("images/note3.png") no-repeat;
+  	background-size: 100% 100%;
+}
+
+.v-grid {
+}
+
+  
+}

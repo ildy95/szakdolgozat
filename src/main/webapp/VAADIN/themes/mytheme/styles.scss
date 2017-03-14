@@ -1,0 +1,19 @@
+@import "mytheme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.mytheme {
+  @include addons;
+  @include mytheme;
+
+}
+
+@include v-font(MyFontFamily,
+              '../../../../mytheme/fonts/whateverittakes');
+  
+@include v-font(MyFontFamily2,
+              '../../../../mytheme/fonts/Mawns_Handwriting');
+              
+              

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: student-management-system
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Ildi
+Implementation-Vendor-Id: hu.sms
+Build-Jdk: 1.8.0_91
+Implementation-URL: http://projects.spring.io/spring-boot/student-mana
+ gement-system/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
