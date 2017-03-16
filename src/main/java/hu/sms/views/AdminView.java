@@ -6,10 +6,14 @@ import com.vaadin.annotations.Title;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.spring.annotation.SpringView;
+import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.VerticalLayout;
 
+import hu.sms.MyVaadinUI;
 import hu.sms.config.ScreenNames;
-import hu.sms.views.layouts.impl.AdminViewLayoutImpl;
+import hu.sms.domain.Esemeny;
+import hu.sms.views.layouts.AdminView.impl.AdminViewLayoutImpl;
+import hu.sms.views.windows.impl.UjEsemenyHirdeteseWindow;
 
 
 @Title("admin_main_screen")
@@ -29,6 +33,17 @@ public class AdminView extends VerticalLayout implements View {
         initComponent();
         adminViewLayoutImpl = new AdminViewLayoutImpl();
         addComponent(adminViewLayoutImpl);
+        
+        //calendar
+        adminViewLayoutImpl.addNewEventToCalendar(this::addNewEventToCalendar);
+    }
+
+    private void addNewEventToCalendar(ClickEvent event) {
+        UjEsemenyHirdeteseWindow ujEsemenyHirdeteseWindow = new UjEsemenyHirdeteseWindow();
+        ujEsemenyHirdeteseWindow.addSaveButtonListener(e -> {
+            
+        });
+        MyVaadinUI.getCurrent().addWindow(ujEsemenyHirdeteseWindow);
     }
 
     public void enter(ViewChangeEvent event) {

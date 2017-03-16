@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head>
+ <body>
+  <vaadin-horizontal-layout size-full>
+   <vaadin-vertical-layout size-full margin _id="esemenyNaptarLayout" :center :expand="2">
+    <vaadin-horizontal-layout width-full _id="datumLeptetesLayout" :center :expand="0.5">
+     <vaadin-horizontal-layout spacing>
+      <vaadin-button icon="fonticon://FontAwesome/f100" description="Előző év" style-name="link blackButton smallButton" plain-text _id="elozoEvButton" :bottom></vaadin-button>
+      <vaadin-button icon="fonticon://FontAwesome/f104" description="Előző hónap" style-name="link blackButton smallButton" plain-text _id="elozoHonapButton"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-popup-date-field width="140px" value="2016-06-20 00:00:00+0200" _id="naptarPopupDataSelect" :middle :center></vaadin-popup-date-field>
+     <vaadin-horizontal-layout spacing :right>
+      <vaadin-button icon="fonticon://FontAwesome/f105" description="Következő hónap" style-name="link blackButton smallButton" plain-text _id="kovetkezoHonapButton" :bottom :right></vaadin-button>
+      <vaadin-button icon="fonticon://FontAwesome/f101" description="Következő év" style-name="link blackButton smallButton" plain-text _id="kovetkezoEvButton" :bottom :right></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout size-full expand="" _id="calendarLayout" :middle :center :expand="5"></vaadin-horizontal-layout>
+    <vaadin-horizontal-layout spacing width-full>
+     <vaadin-check-box caption="Hétvége" _id="showWeekendCheckBox" :bottom :expand></vaadin-check-box>
+     <vaadin-horizontal-layout spacing _id="exportButtonLayout" :right>
+      <vaadin-button icon="fonticon://FontAwesome/f133" description="Ugrás a jelenlegi dátumra" plain-text _id="refreshNaptarButton" :bottom :right></vaadin-button>
+      <vaadin-button icon="fonticon://FontAwesome/f1c3" description="Események exportálása" plain-text _id="esemenyekExportButton" :bottom :right></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout spacing size-full margin _id="esemenyKezelesLayout" :center :expand>
+    <vaadin-button icon="fonticon://FontAwesome/f067" plain-text _id="esemenyekHirdeteseButton" :right>
+      Új esemény hirdetése 
+    </vaadin-button>
+    <vaadin-panel caption="Közelgő események" immediate size-full tabindex="1" _id="kozelgoEsemenyekPanel" :middle :center :expand></vaadin-panel>
+   </vaadin-vertical-layout>
+  </vaadin-horizontal-layout>
+ </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8"> 
+  <meta name="vaadin-version" content="7.7.0">
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout spacing margin> 
+   <vaadin-label style-name="panelTitle" size-auto plain-text _id="titleLabel">
+     Események hirdetése 
+   </vaadin-label> 
+   <vaadin-vertical-layout _id="dataLayout"> 
+    <vaadin-horizontal-layout spacing width-full> 
+     <vaadin-popup-date-field caption="Kezdődátum:" width-full _id="esemenyKezdoDatum" :expand></vaadin-popup-date-field> 
+     <vaadin-popup-date-field caption="Végdátum:" width-full _id="esemenyVegDatum" :expand></vaadin-popup-date-field> 
+    </vaadin-horizontal-layout> 
+    <vaadin-text-field caption="Név:" width-full _id="nev"></vaadin-text-field> 
+    <vaadin-text-area caption="Megjegyzés:" rows="2" width-full _id="megjegyzes" :expand="2.05"></vaadin-text-area> 
+   </vaadin-vertical-layout> 
+   <vaadin-horizontal-layout spacing :bottom :right> 
+    <vaadin-button style-name="link" plain-text _id="cancelButton">
+      Mégsem 
+    </vaadin-button> 
+    <vaadin-button style-name="primary" plain-text _id="saveButton">
+      Mentés 
+    </vaadin-button> 
+   </vaadin-horizontal-layout> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

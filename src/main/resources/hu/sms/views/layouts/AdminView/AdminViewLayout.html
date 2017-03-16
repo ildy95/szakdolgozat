@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing size-full>
+   <vaadin-horizontal-layout size-full :expand>
+    <vaadin-vertical-layout style-name="hitelugylet-menu-button-layout" spacing width="200px" height-full _id="menuButtonsLayout">
+     <vaadin-label size-auto plain-text _id="adminFelulet">
+       Admin felület 
+     </vaadin-label>
+     <vaadin-vertical-layout spacing margin-top _id="adminMenuBarLayout" :expand>
+      <vaadin-horizontal-layout width-full height="28px" _id="alapadatokButton">
+       <vaadin-label icon="fonticon://FontAwesome/f013" style-name="menuIcon" size-auto _id="alapadatokIcon"></vaadin-label>
+       <vaadin-label plain-text _id="alapadatokLabel" :expand>
+         Alapadatok kezelése 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-vertical-layout>
+       <vaadin-horizontal-layout width="160px" height="28px" _id="intezmenyiAlapadatokButton" :right>
+        <vaadin-label icon="fonticon://FontAwesome/f115" style-name="menuIcon" size-auto _id="intezmenyiAlapadatokIcon"></vaadin-label>
+        <vaadin-label plain-text _id="intezmenyiAlapadatokLabel" :right :expand>
+          Intézményi adatok 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width="160px" height="28px" _id="diakokKezeleseButton" :right>
+        <vaadin-label icon="fonticon://FontAwesome/f007" style-name="menuIcon" size-auto _id="diakokKezeleseIcon"></vaadin-label>
+        <vaadin-label plain-text _id="diakokKezeleseLabel" :expand>
+          Diákok 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width="160px" height="28px" _id="osztalyokKezeleseButton" :right>
+        <vaadin-label icon="fonticon://FontAwesome/f0c0" style-name="menuIcon" size-auto _id="osztalyokKezeleseIcon"></vaadin-label>
+        <vaadin-label plain-text _id="osztalyokKezeleseLabel" :expand>
+          Osztályok 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+      </vaadin-vertical-layout>
+      <vaadin-horizontal-layout width-full height="28px" _id="tantargyakKezeleseButton">
+       <vaadin-label icon="fonticon://FontAwesome/f02d" style-name="menuIcon" size-auto _id="tantargyakKezeleseIcon"></vaadin-label>
+       <vaadin-label plain-text _id="tantargyakKezeleseLabel" :expand>
+         Tantárgyak kezelése 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+      <vaadin-horizontal-layout width-full height="28px" _id="orarendekKezeleseButton">
+       <vaadin-label icon="fonticon://FontAwesome/f044" style-name="menuIcon" size-auto _id="orarendekKezeleseIcon"></vaadin-label>
+       <vaadin-label plain-text _id="orarendekKezeleseLabel" :expand>
+         Órarend tervezése 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+     </vaadin-vertical-layout>
+     <vaadin-horizontal-layout spacing>
+      <vaadin-button icon="fonticon://FontAwesome/f015" description="Vissza a főoldalra" style-name="link blackButton smallButton" height="60px" plain-text _id="visszaAFooldalraButton" :expand></vaadin-button>
+      <vaadin-button icon="fonticon://FontAwesome/f003" description="Üzenetek megtekintése" style-name="link blackButton smallButton" height="60px" plain-text _id="uzenetekButton" :expand></vaadin-button>
+      <vaadin-button icon="fonticon://FontAwesome/f085" description="Beállítások" style-name="link blackButton smallButton" height="60px" plain-text _id="beallitasokButton" :expand></vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout size-full :expand>
+     <vaadin-vertical-layout style-name="szerzodesFobbAdatok" height="74px" margin _id="hitelugyletFobbAdatokLayout"></vaadin-vertical-layout>
+     <vaadin-panel size-full tabindex="0" _id="contentLayout" :middle :center :expand></vaadin-panel>
+    </vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
